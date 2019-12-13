@@ -9,8 +9,10 @@
 import UIKit
 
 class BorderButton: UIButton {
-        override class func awakeFromNib() {
+        override func awakeFromNib() {
             super.awakeFromNib()
+            layer.borderWidth = 3.0
+            layer.borderColor = UIColor.white.cgColor
             
         }
 }
