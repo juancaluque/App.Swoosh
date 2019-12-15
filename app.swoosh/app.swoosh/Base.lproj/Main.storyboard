@@ -105,7 +105,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="a25-jG-qq4" kind="show" id="haA-kM-ltt"/>
+                                    <action selector="onNextTapped:" destination="69G-oK-KrM" eventType="touchUpInside" id="0gf-ox-Esw"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="4cd-MY-FIH">
@@ -194,6 +194,9 @@
                         <viewLayoutGuide key="safeArea" id="7zb-K5-Snb"/>
                     </view>
                     <navigationItem key="navigationItem" id="kNb-ax-W7F"/>
+                    <connections>
+                        <segue destination="a25-jG-qq4" kind="show" identifier="skillVCSegue" id="eUr-Fh-mKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IL-KH-e1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mck-cN-0u2" userLabel="Exit" sceneMemberID="exit"/>
