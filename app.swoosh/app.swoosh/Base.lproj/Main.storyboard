@@ -94,7 +94,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="9Ui-0b-joD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17r-Qu-nQA" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17r-Qu-nQA" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="40" y="694" width="334" height="84"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -121,6 +121,9 @@
                                         <state key="normal" title="MENS">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="69G-oK-KrM" eventType="touchUpInside" id="u42-iI-14f"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTM-2o-loX" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="129" width="334" height="84"/>
@@ -132,6 +135,9 @@
                                         <state key="normal" title="WOMENS">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="69G-oK-KrM" eventType="touchUpInside" id="BUf-0O-ZRv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN3-gb-Vc6" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="258" width="334" height="84"/>
@@ -143,6 +149,9 @@
                                         <state key="normal" title="CO-ED">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="69G-oK-KrM" eventType="touchUpInside" id="67g-ZP-nr8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -195,6 +204,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kNb-ax-W7F"/>
                     <connections>
+                        <outlet property="nextBtn" destination="17r-Qu-nQA" id="ss0-7f-HUm"/>
                         <segue destination="a25-jG-qq4" kind="show" identifier="skillVCSegue" id="eUr-Fh-mKO"/>
                     </connections>
                 </viewController>
